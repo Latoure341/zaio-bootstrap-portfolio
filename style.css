@@ -1,32 +1,57 @@
-/*
- * Globals
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*SCROLL Trigger effect*/
+.scroll-trigger {
+  height: 100px;
+}
+body:has(.scroll-trigger:in-view) .scroll {
+  background: transparent;
+}
 
-
-
+body:not(:has(.scroll-trigger:in-view)) .scroll {
+  background: black;
+  color: white;
+}
 /*
  * Base structure
  */
-
-
-
-.cover-container {
-  max-width: 42em;
-}
-
 
 /*
  * Header
  */
 
+.banner-wrap {
+  background-image: url(./assets/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:left;
+  position: relative;
+  z-index: 1;
+}
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+}
+
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, .5);
-  border-bottom: .25rem solid transparent;
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -37,3 +62,6 @@
   color: #fff;
   border-bottom-color: #fff;
 }
+
+
+
