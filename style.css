@@ -3,21 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*SCROLL Trigger effect*/
-.scroll-trigger {
-  height: 100px;
-}
-body:has(.scroll-trigger:in-view) .scroll {
-  background: transparent;
+
+/* CSS Variables for Auto Dark Mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --nav-bg: rgba(0, 0, 0, 0.8);
+  --nav-text: rgba(255, 255, 255, 0.5);
+  --nav-active: #ffffff;
+  --card-bg: #ffffff;
+  --card-text: #000000;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --section-bg: #f8f9fa;
 }
 
-body:not(:has(.scroll-trigger:in-view)) .scroll {
-  background: black;
-  color: white;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --nav-bg: rgba(255, 255, 255, 0.1);
+    --nav-text: rgba(255, 255, 255, 0.7);
+    --nav-active: #ffffff;
+    --card-bg: #1e1e1e;
+    --card-text: #ffffff;
+    --overlay-bg: rgba(0, 0, 0, 0.7);
+    --section-bg: ;
+  }
+ 
 }
 /*
  * Base structure
  */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  background-color: var(--section-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
 
 /*
  * Header
@@ -35,8 +66,7 @@ body:not(:has(.scroll-trigger:in-view)) .scroll {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background: black;
-  opacity: 50%;
+  background: var(--overlay-bg);
   position: absolute;
   top: 0;
 }
@@ -44,7 +74,7 @@ body:not(:has(.scroll-trigger:in-view)) .scroll {
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--nav-text);
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
 }
@@ -59,9 +89,13 @@ body:not(:has(.scroll-trigger:in-view)) .scroll {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: var(--nav-active);
+  border-bottom-color: var(--nav-active);
 }
 
+/*Scroll NavBar Animation*/
+.scroll {
+  transition: all 0.3s ease;
+}
 
 
