@@ -39,6 +39,9 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
 }
+header {
+  color: var(--text-color)
+}
 
 section {
   background-color: var(--section-bg);
