@@ -19,7 +19,7 @@ A modern, responsive portfolio website built with Bootstrap 5, featuring automat
 - **CSS Variables**: For dynamic theming
 - **Media Queries**: `prefers-color-scheme` for automatic dark mode
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 zaioPortfolio/
