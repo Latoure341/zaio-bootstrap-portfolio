@@ -78,7 +78,7 @@ Edit the CSS variables in `style.css`:
 - **Projects Section**: Add your project cards with images and descriptions
 - **Contact Section**: Add your contact information and social links
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Mobile**: < 576px
 - **Tablet**: 576px - 768px
@@ -94,7 +94,7 @@ Edit the CSS variables in `style.css`:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👤 Author
+## Author
 
 **Eric Mothupi**
 - Email: tukamothupi@gmail.com
