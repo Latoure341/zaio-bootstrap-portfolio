@@ -94,12 +94,12 @@ Edit the CSS variables in `style.css`:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Author
+## 👤 Author
 
 **Eric Mothupi**
 - Email: tukamothupi@gmail.com
 - Phone: +27 835560546
-- LinkedIn: [\[Your LinkedIn Profile\]](https://www.linkedin.com/in/tukaericmothupib3660a1b7/)
+- LinkedIn: https://www.linkedin.com/in/tukaericmothupib3660a1b7/
 
 ---
 *Built using Bootstrap and modern CSS*
